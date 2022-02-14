@@ -24,8 +24,6 @@
 	</script>
 	<style>
 	.header {
-		height: 150px;
-		width: 400px;
 		float: center;
 		font-size: 34px;
 		margin: 20px;
@@ -42,9 +40,17 @@
         font-family: sans-serif;
 	}
   	input[type="button"] {
-   		background-color: #d9d9d9;
-        font-family: sans-serif;
+   		border: 2px solid black;
+        background-color: white;
+        padding: 10px;
 	}
+        a.button {
+        border: 2px solid black;
+        background-color: white;
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+    }
 	</style>
 </head>
 <body style="background-color:#e6ffff;">
