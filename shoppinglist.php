@@ -42,7 +42,7 @@
         font-family: sans-serif;
 	}
   	input[type="button"] {
-   		background-color: #F48FE4;
+   		background-color: #d9d9d9;
         font-family: sans-serif;
 	}
 	</style>
@@ -54,7 +54,7 @@
 	<div class="app">
     <a href="http://192.168.1.95/kathleen/website.php">Click here to return home</a>
     <p>Type each item in the text box, then click Add Item <br /> Click on an item in the list to remove it</p>
-	<input type="text" id="box" value="Type here to add a task"/>
+	<input type="text" id="box"/>
 	<br/>
 	<input type="button" value="Add item" onclick="addItem();"/>
 	<br/>
