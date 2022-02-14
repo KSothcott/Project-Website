@@ -42,9 +42,10 @@
   	input[type="button"] {
    		border: 2px solid black;
         background-color: white;
+        font-family: sans-serif;
         padding: 10px;
 	}
-        a.button {
+    a.button {
         border: 2px solid black;
         background-color: white;
         padding: 10px;
@@ -58,10 +59,11 @@
 	<p>Shopping List</p>
 	</div>
 	<div class="app">
-    <a href="http://192.168.1.95/kathleen/website.php">Click here to return home</a>
-    <p>Type each item in the text box, then click Add Item <br /> Click on an item in the list to remove it</p>
+    <a href="http://192.168.1.95/kathleen/website.php" class="button">Click here to return home</a>
+    <br /><br />
+    <p>Type each item in the text box, then click Add Item <br/><br/> Click on an item in the list to remove it</p>
 	<input type="text" id="box"/>
-	<br/>
+	<br/><br/>
 	<input type="button" value="Add item" onclick="addItem();"/>
 	<br/>
 	<div id="list"></div>
