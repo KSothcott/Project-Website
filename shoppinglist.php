@@ -22,14 +22,37 @@
 		}
 	}
 	</script>
-	
+	<style>
+	.header {
+		height: 150px;
+		width: 400px;
+		float: center;
+		font-size: 34px;
+		margin: 20px;
+		padding: 10px;
+		text-align: center;
+        font-family: sans-serif;
+	}
+	.app {
+		height: 600px;
+		width: 400px;
+		float: center; 
+    		padding: 10px; 
+    		margin: 20px;
+        font-family: sans-serif;
+	}
+  	input[type="button"] {
+   		background-color: #F48FE4;
+        font-family: sans-serif;
+	}
+	</style>
 </head>
-<body>
+<body style="background-color:#e6ffff;">
 	<div class="header">
 	<p>Shopping List</p>
-    <a href="http://192.168.1.95/kathleen/website.php">Click here to return home</a>
 	</div>
 	<div class="app">
+    <a href="http://192.168.1.95/kathleen/website.php">Click here to return home</a>
     <p>Type each item in the text box, then click Add Item <br /> Click on an item in the list to remove it</p>
 	<input type="text" id="box" value="Type here to add a task"/>
 	<br/>
