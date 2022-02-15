@@ -22,7 +22,7 @@
     }
 
     .icon-bar a:hover {
-    background-color: #ffffff;
+    background-color: #94a0a1;
     }
 
     .active {
