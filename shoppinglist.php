@@ -56,13 +56,14 @@
 		text-align: center;
         font-family: sans-serif;
 	}
-	.app {
+	.list {
 		height: 600px;
 		width: 100%;
 		float: center; 
     		padding: 10px; 
     		margin: 20px;
         font-family: sans-serif;
+        cursor: pointer;
 	}
   	input[type="button"] {
    		border: 2px solid black;
@@ -94,11 +95,11 @@
 	<p>Shopping List</p>
 	</div>
     
-	<div class="app">
+	<div class="list">
     <a href="#" class="button">New list</a><a href="#" class="button">Save list</a><a href="#" class="button">Print list</a>
     <br /><br />
     <p>Type each item in the text box, then click Add Item <br/><br/> Click on an item in the list to remove it</p>
-	<input type="text" id="box" size="70px"/>
+	<input type="text" id="box" placeholder="Type an item" size="70px"/>
 	<br/><br/>
 	<input type="button" value="Add item" onclick="addItem();"/>
 	<br/>
