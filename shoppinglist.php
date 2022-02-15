@@ -53,13 +53,12 @@
         float: center;
 		font-size: 34px;
 		margin: 20px;
-		padding: 10px;
 		text-align: center;
         font-family: sans-serif;
 	}
 	.app {
 		height: 600px;
-		width: 400px;
+		width: 100%;
 		float: center; 
     		padding: 10px; 
     		margin: 20px;
@@ -85,11 +84,8 @@
     <div class="icon-bar">
     <table style="width: 100%;">
     <tr>
-    <td style="width 20%"><a href="http://192.168.1.95/kathleen/website.php"><i class="fa fa-home"></i></a></td>
-    <td style="width 20%"></td>
-    <td style="width 20%"></td>
-    <td style="width 20%"></td>
-    <td style="width 20%" ><a href="#"><i class="fa fa-gear"></i></a></td>
+    <td style="width 50%"><a href="http://192.168.1.95/kathleen/website.php"><i class="fa fa-home"></i></a></td>
+    <td style="width 50%"><a href="#"><i class="fa fa-gear"></i></a></td>
     </tr>
     </table>
     </div>
@@ -99,7 +95,7 @@
 	</div>
     
 	<div class="app">
-    <a href="http://192.168.1.95/kathleen/website.php" class="button">Click here to return home</a>
+    <a href="#" class="button">New list</a><a href="#" class="button">Save list</a><a href="#" class="button">Print list</a>
     <br /><br />
     <p>Type each item in the text box, then click Add Item <br/><br/> Click on an item in the list to remove it</p>
 	<input type="text" id="box" size="70px"/>
