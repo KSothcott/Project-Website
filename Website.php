@@ -33,7 +33,6 @@
         float: center;
 		font-size: 34px;
 		margin: 20px;
-		padding: 10px;
 		text-align: center;
         font-family: sans-serif;
     }
