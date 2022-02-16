@@ -18,15 +18,13 @@
     padding: 12px 0;
     transition: all 0.3s ease;
     color: white;
-    font-size: 36px;
+    font-size: 40px;
+    text-decoration: none;
+    cursor: pointer;
     }
 
     .icon-bar a:hover {
     background-color: #94a0a1;
-    }
-
-    .active {
-    background-color: #ffffff;
     }
     
     .heading {
@@ -50,16 +48,12 @@
 </head>
 <body>
     
-    <div class="icon-bar">
-    <table style="width: 100%;">
-    <tr>
-    <td style="width 20%"><a href="http://192.168.1.95/kathleen/website.php"><i class="fa fa-home"></i></a></td>
-    <td style="width 20%"></td>
-    <td style="width 20%"></td>
-    <td style="width 20%"></td>
-    <td style="width 20%" ><a href="#"><i class="fa fa-gear"></i></a></td>
-    </tr>
-    </table>
+    <div class="icon-bar" style="font-family: sans-serif;">
+        <a href="http://192.168.1.95/kathleen/website.php" style="font-size: 47px;"><i class="fa fa-home"></i></a> 
+        <a style="background-color: #7bc9c9;">  </a> 
+        <a style="background-color: #7bc9c9;">My Meal Planner</a> 
+        <a style="background-color: #7bc9c9;">  </a>
+        <a href="#" style="font-size: 47px;"><i class="fa fa-gear"></i></a> 
     </div>
     
     <div class="heading">
