@@ -65,8 +65,10 @@
     <div class="heading">
     <p>Homepage</p>
     </div>
-    
+    <img src="Meal_Planner_Logo.png" width="80pt" height="80pt"/>
     <br /><br />
+    <a href="http://192.168.1.95/kathleen/mealplanner.php" class="button">Click here to create a meal plan</a>
+    <br /><br /><br /><br /><br />
     <a href="http://192.168.1.95/kathleen/shoppinglist.php" class="button">Click here to create a shopping list</a>
 
 </body>
