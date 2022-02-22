@@ -19,7 +19,17 @@
 
         <?php } ?>
 
+        <label>Username</label>
 
+        <input type="text" name="username" placeholder="Enter your username"> <br/><br/>
+
+        <label>Password</label>
+
+        <input type="password" name="password" placeholder="Enter your password"><br/><br/> 
+
+        <button type="submit">Login</button>
+
+     </form>
 
 </body>
 </html>
