@@ -1,7 +1,7 @@
 <html>
 <head>
 
-    <title>User Login</title>
+    <title>Login</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -90,6 +90,8 @@ window.onload = function()
         <button onclick="document.getElementById('f1').submit()">Login</button>
 
      </form>
-
+     
+    <br /><br />
+    <a href="http://192.168.1.95/kathleen/newuser.php" class="button">New user? Click here to create an account</a>
 </body>
 </html>

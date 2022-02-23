@@ -1,8 +1,8 @@
 <html>
 <head>
-<title>Homepage</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Create an Account</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 <style>
     
     .icon-bar {
@@ -59,8 +59,11 @@
     </div>
     
     <div class="heading">
-    <p>Homepage</p>
+    <p>Create an Account</p>
     </div>
-    
+
+     
+    <br /><br />
+    <a href="http://192.168.1.95/kathleen/login.php" class="button">Already have an account? Click here to login</a>   
 </body>
 </html>
