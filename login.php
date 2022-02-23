@@ -3,8 +3,8 @@
 
     <title>User Login</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 <style>
     
     .icon-bar {
@@ -48,6 +48,13 @@
     }
 </style>
 </head>
+<script>
+window.onload = function()
+{
+    document.getElementById('username').focus();
+};
+
+</script>
 
 <body>
     <div class="icon-bar" style="font-family: sans-serif;">
@@ -60,7 +67,11 @@
 
      <form action="login.php" method="post">
 
-        <h2>Login</h2>
+    <div class="heading">
+    <p>Login</p>
+    </div>
+    
+     <form action="login_process.php" method="post" id="f1" name="f1">
 
         <?php if (isset($_GET['error'])) { ?>
 
@@ -68,15 +79,15 @@
 
         <?php } ?>
 
-        <label>Username</label>
+        <label style="font-family: sans-serif;">Username</label>
 
-        <input type="text" name="username" placeholder="Enter your username"> <br/><br/>
+        <input type="text" name="username" id="username" placeholder="Enter your username" form="f1"/> <br/><br/>
 
-        <label>Password</label>
+        <label style="font-family: sans-serif;">Password</label>
 
-        <input type="password" name="password" placeholder="Enter your password"><br/><br/> 
+        <input type="password" name="password" placeholder="Enter your password" form="f1"/><br/><br/> 
 
-        <button type="submit">Login</button>
+        <button onclick="document.getElementById('f1').submit()">Login</button>
 
      </form>
 
