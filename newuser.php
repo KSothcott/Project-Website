@@ -60,8 +60,29 @@
     
     <div class="heading">
     <p>Create an Account</p>
-    </div>
 
+    </div>
+     <form action="#####" method="post" id="f1" name="f1">
+
+        <label style="font-family: sans-serif;">First name</label>
+        <input type="text" name="firstname" id="firstname" placeholder="First name" form="f1"/> <br/><br/>
+       
+        <label style="font-family: sans-serif;">Last name</label>
+        <input type="text" name="lastname" id="lastname" placeholder="Last name" form="f1"/> <br/><br/>
+         
+        <label style="font-family: sans-serif;">Create a username</label>
+        <input type="text" name="username" id="username" placeholder="Enter your username" form="f1"/> <br/><br/>
+
+        <label style="font-family: sans-serif;">Create a password</label>
+        <input type="password" name="password" placeholder="Enter your password" form="f1"/><br/><br/> 
+        
+        <label style="font-family: sans-serif;">Re-enter your password</label>
+        <input type="password2" name="password2" placeholder="Re-enter your password" form="f1"/><br/><br/> 
+
+        <button onclick="document.getElementById('f1').submit()">Create account</button>
+
+     </form>
+     
      
     <br /><br />
     <a href="http://192.168.1.95/kathleen/login.php" class="button">Already have an account? Click here to login</a>   
