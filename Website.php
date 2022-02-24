@@ -42,7 +42,9 @@
         text-decoration: none;
         color: black;
         font-family: sans-serif;
+        font-size: 15pt;
         margin: 20px;
+        text-align: center;
     }
 </style>
 </head>
@@ -59,7 +61,7 @@
     <div class="heading">
     <p>Homepage</p>
     </div>
-    <img src="Meal_Planner_Logo.png" width="80pt" height="80pt"/>
+    <img src="Meal_Planner_Logo.png" style="float: right;width: 300px;height: 300px;padding-right: 50px;"/>
     <br /><br />
     <a href="http://192.168.1.95/kathleen/mealplanner.php" class="button">Click here to create a meal plan</a>
     <br /><br /><br /><br /><br />

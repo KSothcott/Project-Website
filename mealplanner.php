@@ -24,10 +24,6 @@
     .icon-bar a:hover {
     background-color: #94a0a1;
     }
-
-    .active {
-    background-color: #ffffff;
-    }
     
     .heading {
         float: center;
