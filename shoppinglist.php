@@ -56,8 +56,8 @@
 		height: 600px;
 		width: 100%;
 		float: center; 
-    		padding: 10px; 
-    		margin: 20px;
+		padding: 10px; 
+    	margin: 20px;
         font-family: sans-serif;
         cursor: pointer;
 	}
@@ -71,6 +71,7 @@
         border: 2px solid black;
         background-color: white;
         padding: 10px;
+        margin: 10pt;
         text-decoration: none;
         color: black;
     }
