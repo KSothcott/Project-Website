@@ -83,7 +83,7 @@
         <a style="background-color: #7bc9c9;">  </a> 
         <a style="background-color: #7bc9c9;">My Meal Planner</a> 
         <a style="background-color: #7bc9c9;">  </a>
-        <a href="#" style="font-size: 47px;"><i class="fa fa-gear"></i></a> 
+        <a href="http://192.168.1.95/kathleen/settings.php" style="font-size: 47px;"><i class="fa fa-gear"></i></a> 
     </div>
 
 	<div class="heading">
