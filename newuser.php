@@ -52,6 +52,7 @@ function create_new_user()
     
   document.getElementById('f1').submit();  
 }
+
 </script>
 
 <html>
