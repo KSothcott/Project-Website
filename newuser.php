@@ -4,7 +4,7 @@ function check_passwords_match()
     var  p1 = document.getElementById("password").value;
     var p2 = document.getElementById("password2").value;
     if(!(p1===p2)) 
-     { alert("Passwords not equal");
+     { alert("Passwords do not match");
         document.getElementById('password').value = "";
         document.getElementById('password2').value= "";
         document.getElementById('password').focus();
@@ -23,6 +23,30 @@ function create_new_user()
     {
         alert("First Name Not Entered"); 
         document.getElementById('firstname').focus();
+        return;
+    }
+    
+    let last = document.getElementById("lastname").value;
+    last = last.toUpperCase();
+    document.getElementById('lastname').value = last;
+    
+    
+    if(last==="")
+    {
+        alert("Last name not entered"); 
+        document.getElementById('lastname').focus();
+        return;
+    }
+    
+    let email = document.getElementById("email").value;
+    email = email.toLowerCase();
+    document.getElementById('email').value = email;
+    
+    
+    if(email==="")
+    {
+        alert("Email address not valid"); 
+        document.getElementById('email').focus();
         return;
     }
     
@@ -92,9 +116,9 @@ function create_new_user()
     
     <div class="heading">
     <p>Create an Account</p>
-
     </div>
-     <form action="#####" method="post" id="f1" name="f1">
+    
+     <form action="newuserprocess.php" method="post" id="f1" name="f1">
 
         <label style="font-family: sans-serif;">First name</label>
         <input type="text" name="firstname" id="firstname" placeholder="First name" form="f1"/> <br/><br/>
@@ -102,18 +126,17 @@ function create_new_user()
         <label style="font-family: sans-serif;">Last name</label>
         <input type="text" name="lastname" id="lastname" placeholder="Last name" form="f1"/> <br/><br/>
          
-        <label style="font-family: sans-serif;">Create a username</label>
-        <input type="text" name="username" id="username" placeholder="Enter your username" form="f1"/> <br/><br/>
+        <label style="font-family: sans-serif;">Email address</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email address" form="f1"/> <br/><br/>
 
         <label style="font-family: sans-serif;">Create a password</label>
-        <input type="password" name="password" placeholder="Enter your password" form="f1"/><br/><br/> 
+        <input type="password" id="password" name="password" placeholder="Enter your password" form="f1"/><br/><br/> 
         
         <label style="font-family: sans-serif;">Re-enter your password</label>
-        <input type="password2" name="password2" placeholder="Re-enter your password" form="f1"/><br/><br/> 
-
-        <button onclick="document.getElementById('f1').submit()">Create account</button>
+        <input type="password" id="password2" name="password2" placeholder="Re-enter your password" form="f1"/><br/><br/> 
 
      </form>
+        <button onclick="create_new_user()">Create account</button>
      
      
     <br /><br />
