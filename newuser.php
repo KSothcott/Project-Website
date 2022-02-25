@@ -1,3 +1,35 @@
+<script>
+function check_passwords_match()
+{
+    var  p1 = document.getElementById("password").value;
+    var p2 = document.getElementById("password2").value;
+    if(!(p1===p2)) 
+     { alert("Passwords not equal");
+        document.getElementById('password').value = "";
+        document.getElementById('password2').value= "";
+        document.getElementById('password').focus();
+        return;
+     }    
+}
+
+function create_new_user()
+{
+    let first = document.getElementById("firstname").value;
+    first = first.toUpperCase();
+    document.getElementById('firstname').value = first;
+    
+    
+    if(first==="")
+    {
+        alert("First Name Not Entered"); 
+        document.getElementById('firstname').focus();
+        return;
+    }
+    
+  document.getElementById('f1').submit();  
+}
+</script>
+
 <html>
 <head>
 <title>Create an Account</title>
