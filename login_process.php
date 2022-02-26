@@ -1,9 +1,9 @@
 <?php
 
 
-//echo 'Username is '.$_POST['username'].'<br /> password is '.$_POST['password']; 
+//echo 'Email is '.$_POST['email'].'<br /> password is '.$_POST['password']; 
 
-if(!strcmp("user",$_POST['username']) && !strcmp('admin',$_POST['password']))
+if(!strcmp("abc@def",$_POST['email']) && !strcmp('admin',$_POST['password']))
 {
     
      echo '<body onload="window.location='."'website.php'".'"></body>';

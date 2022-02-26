@@ -65,27 +65,20 @@ window.onload = function()
         <a href="http://192.168.1.95/kathleen/settings.php" style="font-size: 47px;"><i class="fa fa-gear"></i></a> 
     </div>
 
-     <form action="login.php" method="post">
-
     <div class="heading">
     <p>Login</p>
     </div>
     
      <form action="login_process.php" method="post" id="f1" name="f1">
 
-        <?php if (isset($_GET['error'])) { ?>
 
-            <p class="error"><?php echo $_GET['error']; ?></p>
+        <label style="font-family: sans-serif;">Email address</label>
 
-        <?php } ?>
-
-        <label style="font-family: sans-serif;">Username</label>
-
-        <input type="text" name="username" id="username" placeholder="Enter your username" form="f1"/> <br/><br/>
+        <input type="email" name="email" id="email" placeholder="Enter your email" form="f1"/> <br/><br/>
 
         <label style="font-family: sans-serif;">Password</label>
 
-        <input type="password" name="password" placeholder="Enter your password" form="f1"/><br/><br/> 
+        <input type="password" name="password" id="password" placeholder="Enter your password" form="f1"/><br/><br/> 
 
         <button onclick="document.getElementById('f1').submit()">Login</button>
 
