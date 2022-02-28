@@ -67,14 +67,22 @@
         font-family: sans-serif;
         padding: 10px;
 	}
-    a.button {
+    .button {
         border: 2px solid black;
         background-color: white;
         padding: 10px;
         margin: 10pt;
         text-decoration: none;
         color: black;
+        cursor: pointer;
     }
+    
+    .button:hover {
+    background-color: #d1f1f1;
+    transition: all 0.4s ease;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.10), 0 17px 50px 0 rgba(0,0,0,0.10);
+    }
+    
 	</style>
 </head>
 <body>
@@ -94,10 +102,10 @@
 	<div class="list">
     <a href="#" class="button">New list</a><a href="#" class="button">Save list</a><a href="#" class="button">Print list</a>
     <br /><br />
-    <p>Type each item in the text box, then click Add Item <br/><br/> Click on an item in the list to remove it</p>
+    <p>Type each item in the text box, then click 'Add Item' <br/><br/> Click on an item in the list to remove it</p>
 	<input type="text" id="box" placeholder="Type an item" size="70px"/>
 	<br/><br/>
-	<input type="button" value="Add item" onclick="addItem();"/>
+	<input type="button" value="Add Item" class="button" onclick="addItem();"/>
 	<br/>
 	<div id="list"></div>
 	</div>
