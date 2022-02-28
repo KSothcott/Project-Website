@@ -17,6 +17,8 @@
     
     $con = null;
 
-    setcookie('cookievalue',$_POST['email'].time(),time()+(60*60));
+    setcookie('cookievalue',$_POST['email'].time(),time()+(60*60))
 ?>
 
+
+<html><body onload="window.location.href='website.php'"></body></html>
