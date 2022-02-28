@@ -35,7 +35,7 @@
         font-family: sans-serif;
     }
     
-    a.button {
+    .button {
         border: 2px solid black;
         background-color: white;
         padding: 10px;
@@ -43,9 +43,16 @@
         color: black;
         font-family: sans-serif;
         font-size: 15pt;
-        margin: 20px;
+        margin: 50px;
         text-align: center;
+    } 
+       
+    .button:hover {
+    background-color: #d1f1f1;
+    transition: all 0.4s ease;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.10), 0 17px 50px 0 rgba(0,0,0,0.10);
     }
+    
 </style>
 </head>
 <body>
@@ -61,6 +68,7 @@
     <div class="heading">
     <p>Homepage</p>
     </div>
+    
     <img src="Meal_Planner_Logo.png" style="float: right;width: 300px;height: 300px;padding-right: 50px;"/>
     <br /><br />
     <a href="http://192.168.1.95/kathleen/mealplanner.php" class="button">Click here to create a meal plan</a>
