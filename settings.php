@@ -46,6 +46,13 @@
         margin: 20px;
         text-align: center;
     }
+    
+    .button:hover {
+    background-color: #d1f1f1;
+    transition: all 0.4s ease;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.10), 0 17px 50px 0 rgba(0,0,0,0.10);
+    }
+    
 </style>
 </head>
 <body>
@@ -62,6 +69,8 @@
     <p>Settings</p>
     </div>
     
+    <a href="http://192.168.1.95/kathleen/newuser.php" class="button">Click here to create an account</a>
+    <br /><br /><br /><br /> 
     <a href="http://192.168.1.95/kathleen/login.php" class="button">Click here to login to your account</a>
 
 </body>
