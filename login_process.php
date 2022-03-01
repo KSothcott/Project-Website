@@ -1,14 +1,26 @@
 <?php
+include_once('server.php');
+ 
 
+$query = 'SELECT `UserID`, `FirstName`, `LastName`, `Email`, DECODE(`password`, "'.$keystring.'") AS "PASSWORD"  FROM `userlogin`.`userinfo` WHERE `email`="'.$_POST['email'].'"';
 
-//echo 'Email is '.$_POST['email'].'<br /> password is '.$_POST['password']; 
+$result = $con->query($query);
 
-if(!strcmp("abc@def",$_POST['email']) && !strcmp('admin',$_POST['password']))
-{
+$row = $result->fetch(PDO::FETCH_ASSOC);
+
+if(strcmp($_POST['email'],$row['Email'])) $checkemail = 0;
+    else$checkemail = 1;
     
-     echo '<body onload="window.location='."'website.php'".'"></body>';
+if(strcmp($_POST['password'],$row['PASSWORD']))  $checkpassword=0;
+   else $checkpassword = 1;
+   
+if($checkemail && $checkpassword) 
+{
+    setcookie('cookievalue',$cookievalue,time()+3600); 
 }
-else echo '<body onload="window.location='."'login.php'".'"></body>';
 
 
+$con=NULL;
 ?>
+
+<html><body onload="window.location.href='website.php'"></body></body></html>
