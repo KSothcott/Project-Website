@@ -93,7 +93,7 @@ function create_new_user()
         font-family: sans-serif;
     }
     
-    a.button {
+    .button {
         border: 2px solid black;
         background-color: white;
         padding: 10px;
@@ -102,6 +102,13 @@ function create_new_user()
         font-family: sans-serif;
         margin: 20px;
     }
+    
+    .button:hover {
+    background-color: #d1f1f1;
+    transition: all 0.4s ease;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.10), 0 17px 50px 0 rgba(0,0,0,0.10);
+    }
+    
 </style>
 </head>
 
