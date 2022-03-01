@@ -1,3 +1,8 @@
+<?php
+
+    include_once('header.php');
+
+?>
 <head>
 	<title>Shopping List</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
