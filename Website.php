@@ -1,3 +1,7 @@
+<?php
+include_once('cookiecheck.php');
+?>
+
 <html>
 <head>
 <title>Homepage</title>
