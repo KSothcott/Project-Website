@@ -1,6 +1,6 @@
 <?php
             date_default_timezone_set('Europe\London');
-            $con = new PDO("mysql:host=127.0.0.1;dbname=userlogin", "root", "bi11andben");
+            include_once('server.php');
             
             if(is_null($_COOKIE['user'])) echo '<body onload="window.location.href='."'login.php'".'">';
             else{
