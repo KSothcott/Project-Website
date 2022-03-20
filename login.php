@@ -61,7 +61,7 @@ include_once('cookiecheck.php');
 <script>
 window.onload = function()
 {
-    document.getElementById('username').focus();
+    document.getElementById('email').focus();
 };
 
 </script>

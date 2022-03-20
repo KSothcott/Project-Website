@@ -54,9 +54,12 @@ function create_new_user()
         return;
     }
     
-  document.getElementById('f1').submit();  
+    document.getElementById('f1').submit();  
 }
-
+    window.onload = function()
+    {
+    document.getElementById('firstname').focus();
+    }
 </script>
 
 <html>

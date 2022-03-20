@@ -33,6 +33,13 @@
             localStorage.clear();
             location.reload();
     }
+   
+    function enterItem() {        
+    addItem();
+    document.getElementById("box").value="";
+    document.getElementById("box").focus();
+    } 
+    
 	</script>
 	<style>
 	.icon-bar {
@@ -63,7 +70,6 @@
         font-family: sans-serif;
 	}
 	.list {
-		height: 600px;
 		width: 100%;
 		float: center; 
 		padding: 10px; 
@@ -81,21 +87,30 @@
         border: 2px solid black;
         background-color: white;
         padding: 10px;
-        margin: 10pt;
+        margin: 20px;
         text-decoration: none;
         color: black;
         cursor: pointer;
+        height: 50px;
+        width: 100px;
+        font-size: 12pt;
     }
-    
     .button:hover {
     background-color: #d1f1f1;
     transition: all 0.4s ease;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.10), 0 17px 50px 0 rgba(0,0,0,0.10);
     }
-    
+    .text {
+        margin: 20px;
+    }
+    .textbox {
+        margin: 20px;
+        padding: 10px;
+        font-size: 11pt;
+    }    
 	</style>
 </head>
-<body>
+<body onload="document.getElementById('box').focus()">
 
     <div class="icon-bar" style="font-family: sans-serif;">
         <a href="http://192.168.1.95/kathleen/website.php" style="font-size: 47px;"><i class="fa fa-home"></i></a> 
@@ -108,14 +123,13 @@
 	<div class="heading">
 	<p>Shopping List</p>
 	</div>
-    
 	<div class="list">
     <button onclick="clearList()" class="button">New list</button><button onclick="window.print()" class="button">Print list</button>
-    <br /><br />
-    <p>Type each item in the text box, then click 'Add Item' <br/><br/> Click on an item in the list to remove it</p>
-	<input type="text" id="box" placeholder="Type an item" size="70px"/>
-	<br/><br/>
-	<input type="button" value="Add Item" class="button" onclick="addItem();"/>
+    <br />
+    <p class="text">Type each item in the text box, then click 'Add Item' or press Enter<br/><br/> Click on an item in the list to remove it</p>
+	<input class="textbox" type="text" id="box" placeholder="Type an item" size="50px" onchange="enterItem()"/>
+	<br/>
+	<input type="button" value="Add Item" id="button" class="button" onclick="addItem();"/>
 	<br/>
 	<div id="list"></div>
 	</div>
@@ -124,6 +138,6 @@
 		if(localStorage.storedList) {
 		loadList();
 		}
-	</script
+	</script>
 </body>
 </html>
