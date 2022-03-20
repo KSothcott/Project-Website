@@ -28,6 +28,11 @@
 		list.children[i].onclick = removeItem;
 		}
 	}
+    function clearList() {
+        document.getElementById("list");
+            localStorage.clear();
+            location.reload();
+    }
 	</script>
 	<style>
 	.icon-bar {
@@ -105,7 +110,7 @@
 	</div>
     
 	<div class="list">
-    <button class="button">New list</button><button onclick="window.print()" class="button">Print list</button>
+    <button onclick="clearList()" class="button">New list</button><button onclick="window.print()" class="button">Print list</button>
     <br /><br />
     <p>Type each item in the text box, then click 'Add Item' <br/><br/> Click on an item in the list to remove it</p>
 	<input type="text" id="box" placeholder="Type an item" size="70px"/>
