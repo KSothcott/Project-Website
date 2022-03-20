@@ -107,11 +107,14 @@
 	<div class="list">
     <a href="#" class="button">New list</a><a href="#" class="button">Save list</a><a href="#" class="button">Print list</a>
     <br /><br />
-    <p>Type each item in the text box, then click 'Add Item' <br/><br/> Click on an item in the list to remove it</p>
-	<input type="text" id="box" placeholder="Type an item" size="70px"/>
-	<br/><br/>
-	<input type="button" value="Add Item" class="button" onclick="addItem();"/>
+    
+    <form action="shoppinglistprocess.php" method="post">
+    
+	<input type="text" id="textbox" placeholder="Type an item" size="70px"/>
 	<br/>
+	<input type="button" id="additem" value="Add Item" class="button" onclick="addItem();"/>
+	<br/>
+    </form>
 	<div id="list"></div>
 	</div>
     
