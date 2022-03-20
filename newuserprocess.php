@@ -1,7 +1,6 @@
 
 <?php
     include_once('server.php');
-    $con = new PDO("mysql:host=127.0.0.1;dbname=userlogin","root","bi11andben");
     
     $query = 'SELECT * FROM `userinfo` WHERE `email`= "'.$_POST['email'].'"';
     
