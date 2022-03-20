@@ -105,7 +105,7 @@
 	</div>
     
 	<div class="list">
-    <a href="#" class="button">New list</a><a href="#" class="button">Save list</a><a href="#" class="button">Print list</a>
+    <button class="button">New list</button><button onclick="window.print()" class="button">Print list</button>
     <br /><br />
     <p>Type each item in the text box, then click 'Add Item' <br/><br/> Click on an item in the list to remove it</p>
 	<input type="text" id="box" placeholder="Type an item" size="70px"/>
