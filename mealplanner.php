@@ -1,7 +1,17 @@
+<script>
+
+function selectday($day,$meal){
+    var $outstring = "mealdetails.php?day="+$day+"&meal="+$meal; 
+    window.location.href=$outstring;
+}
+
+</script>
+
 <?php
 
     include_once('cookiecheck.php');
-
+    include_once('server.php');
+    
 ?>
 <html>
 <head>
@@ -93,38 +103,39 @@
     
     <tr>
         <td style="background-color: #b3e6e6; text-align: center; padding: 10px; font-weight: bold;">Breakfast</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td onclick="selectday('1','B')"></td>
+        <td onclick="selectday('2','B')"></td>
+        <td onclick="selectday('3','B')"></td>
+        <td onclick="selectday('4','B')"></td>
+        <td onclick="selectday('5','B')"></td>
+        <td onclick="selectday('6','B')"></td>
+        <td onclick="selectday('7','B')"></td>
     </tr>
     
     <tr>
         <td style="background-color: #b3e6e6; text-align: center; padding: 10px; font-weight: bold;">Lunch</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td onclick="selectday('1','L')"></td>
+        <td onclick="selectday('2','L')"></td>
+        <td onclick="selectday('3','L')"></td>
+        <td onclick="selectday('4','L')"></td>
+        <td onclick="selectday('5','L')"></td>
+        <td onclick="selectday('6','L')"></td>
+        <td onclick="selectday('7','L')"></td>
     </tr>
     
     <tr>
         <td style="background-color: #b3e6e6; text-align: center; padding: 10px; font-weight: bold;">Dinner</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td onclick="selectday('1','D')"></td>
+        <td onclick="selectday('2','D')"></td>
+        <td onclick="selectday('3','D')"></td>
+        <td onclick="selectday('4','D')"></td>
+        <td onclick="selectday('5','D')"></td>
+        <td onclick="selectday('6','D')"></td>
+        <td onclick="selectday('7','D')"></td>
     </tr>
        
     
     </table>
+    
 </body>
 </html>
