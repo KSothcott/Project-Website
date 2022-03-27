@@ -12,6 +12,10 @@ function selectday($day,$meal){
     include_once('cookiecheck.php');
     include_once('server.php');
     
+    $query = 'SELECT * FROM `mealplan` WHERE `UserID` = '.$_COOKIE['UserID'];
+    $result = $con->query($query);
+    $row = $result->fetch(PDO::FETCH_ASSOC);
+    
 ?>
 <html>
 <head>
