@@ -103,35 +103,35 @@ function selectday($day,$meal){
     
     <tr>
         <td style="background-color: #b3e6e6; text-align: center; padding: 10px; font-weight: bold;">Breakfast</td>
-        <td onclick="selectday('1','B')"></td>
-        <td onclick="selectday('2','B')"></td>
-        <td onclick="selectday('3','B')"></td>
-        <td onclick="selectday('4','B')"></td>
-        <td onclick="selectday('5','B')"></td>
-        <td onclick="selectday('6','B')"></td>
-        <td onclick="selectday('7','B')"></td>
+        <td onclick="selectday('1','B')"><?php echo $row['1BName'];?></td>
+        <td onclick="selectday('2','B')"><?php echo $row['2BName'];?></td>
+        <td onclick="selectday('3','B')"><?php echo $row['3BName'];?></td>
+        <td onclick="selectday('4','B')"><?php echo $row['4BName'];?></td>
+        <td onclick="selectday('5','B')"><?php echo $row['5BName'];?></td>
+        <td onclick="selectday('6','B')"><?php echo $row['6BName'];?></td>
+        <td onclick="selectday('7','B')"><?php echo $row['7BName'];?></td>
     </tr>
     
     <tr>
         <td style="background-color: #b3e6e6; text-align: center; padding: 10px; font-weight: bold;">Lunch</td>
-        <td onclick="selectday('1','L')"></td>
-        <td onclick="selectday('2','L')"></td>
-        <td onclick="selectday('3','L')"></td>
-        <td onclick="selectday('4','L')"></td>
-        <td onclick="selectday('5','L')"></td>
-        <td onclick="selectday('6','L')"></td>
-        <td onclick="selectday('7','L')"></td>
+        <td onclick="selectday('1','L')"><?php echo $row['1LName'];?></td>
+        <td onclick="selectday('2','L')"><?php echo $row['2LName'];?></td>
+        <td onclick="selectday('3','L')"><?php echo $row['3LName'];?></td>
+        <td onclick="selectday('4','L')"><?php echo $row['4LName'];?></td>
+        <td onclick="selectday('5','L')"><?php echo $row['5LName'];?></td>
+        <td onclick="selectday('6','L')"><?php echo $row['6LName'];?></td>
+        <td onclick="selectday('7','L')"><?php echo $row['7LName'];?></td>
     </tr>
     
     <tr>
         <td style="background-color: #b3e6e6; text-align: center; padding: 10px; font-weight: bold;">Dinner</td>
-        <td onclick="selectday('1','D')"></td>
-        <td onclick="selectday('2','D')"></td>
-        <td onclick="selectday('3','D')"></td>
-        <td onclick="selectday('4','D')"></td>
-        <td onclick="selectday('5','D')"></td>
-        <td onclick="selectday('6','D')"></td>
-        <td onclick="selectday('7','D')"></td>
+        <td onclick="selectday('1','D')"><?php echo $row['1DName'];?></td>
+        <td onclick="selectday('2','D')"><?php echo $row['2DName'];?></td>
+        <td onclick="selectday('3','D')"><?php echo $row['3DName'];?></td>
+        <td onclick="selectday('4','D')"><?php echo $row['4DName'];?></td>
+        <td onclick="selectday('5','D')"><?php echo $row['5DName'];?></td>
+        <td onclick="selectday('6','D')"><?php echo $row['6DName'];?></td>
+        <td onclick="selectday('7','D')"><?php echo $row['7DName'];?></td>
     </tr>
        
     
