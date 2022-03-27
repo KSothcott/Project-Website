@@ -1,3 +1,33 @@
+<script>
+
+function editMeal()
+{
+    let name = document.getElementById("mealname").value;
+    
+    document.getElementById('mealname').value = name;
+    
+    
+    if(name==="")
+    {
+        alert("Meal name not entered"); 
+        document.getElementById('mealname').focus();
+        return;
+    }
+    
+    let note = document.getElementById("mealnote").value;
+
+    document.getElementById('mealnote').value = note;
+    
+    document.getElementById('f1').submit();
+}
+</script>
+
+<?php
+
+    include_once('cookiecheck.php');
+    include_once('server.php');
+
+?>
 <html>
 <head>
 <title>Edit Meal</title>
@@ -69,3 +99,27 @@
     <div class="heading">
     <p>Meal Edit</p>
     </div>
+    
+<?php
+    
+    $column_name = $_GET['day'].$_GET['meal'].'Name';
+    $column_note = $_GET['day'].$_GET['meal'].'Note';
+
+    $query = 'SELECT `'.$column_name.'`, `'.$column_note.'` FROM `mealplan` WHERE `UserID` = '.$_COOKIE['UserID'];
+    $result = $con->query($query);
+    $row = $result->fetch(PDO::FETCH_ASSOC);
+    
+        echo '<form action="mealeditprocess.php" method="post" id="f1" name="f1">';
+        echo '<input type="hidden" form="f1" value="'.$_GET['day'].'" name="mealday" />';
+        echo '<input type="hidden" form="f1" value="'.$_GET['meal'].'" name="mealtype" />';
+        echo '<label style="font-family: sans-serif;">Meal Name</label>';
+        echo '<input type="text" name="mealname" id="mealname" placeholder="Meal name" form="f1" value="'.$row[$column_name].'" onchange="document.getElementById('."'f1'".').submit()"/>';
+        echo '<br /><br />';
+        echo '<label style="font-family: sans-serif;">Notes</label>';
+        echo '<input type="text" name="mealnote" id="mealnote" placeholder="Notes" form="f1" value="'.$row[$column_note].'" onchange="document.getElementById('."'f1'".').submit()"/>';
+        echo '</form>';
+
+?>
+
+</body>
+</html>
