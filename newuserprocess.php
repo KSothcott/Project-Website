@@ -9,10 +9,15 @@
     
     if($is_exist_email) echo 'email exists';
 
-    
-  $query = 'INSERT INTO `userlogin`.`userinfo` (`FirstName`, `LastName`, `Email`, `password`) VALUES ("'.$_POST['firstname'].'", "'.$_POST['lastname'].'", "'.$_POST['email'].'", ENCODE("'.$_POST['password'].'", "'.$keystring.'"))';   
+    $query = 'INSERT INTO `userlogin`.`userinfo` (`FirstName`, `LastName`, `Email`, `password`) VALUES ("'.$_POST['firstname'].'", "'.$_POST['lastname'].'", "'.$_POST['email'].'", ENCODE("'.$_POST['password'].'", "'.$keystring.'"))';
+    $result=$con->query($query);   
    
-   $con->query($query);   
+    $query = 'SELECT MAX(`UserID`) AS "UserID" FROM `userlogin`.`userinfo`'; 
+    $result=$con->query($query);
+    $row = $result->fetch(PDO::FETCH_ASSOC);
+    
+    $query = "INSERT INTO `userlogin`.`mealplan` (`UserID`) VALUES ('".$row['UserID']."' )"; 
+    $con->query($query);  
     
     $con = null;
 
