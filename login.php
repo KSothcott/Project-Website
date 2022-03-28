@@ -1,6 +1,4 @@
-<?php
-include_once('cookiecheck.php');
-?>
+
 <html>
 <head>
 
