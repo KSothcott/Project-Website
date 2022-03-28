@@ -84,6 +84,22 @@ function editMeal()
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.10), 0 17px 50px 0 rgba(0,0,0,0.10);
     }
     
+    .text {
+        margin: 20px;
+        
+    }
+    .textbox {
+        margin: 20px;
+        padding: 10px;
+        font-size: 12pt;
+        width: 60%;
+    }
+    
+    .label {
+        margin: 20px;
+        font-size: 15pt;
+    }
+    
 </style>
 </head>
 <body>
@@ -112,11 +128,18 @@ function editMeal()
         echo '<form action="mealeditprocess.php" method="post" id="f1" name="f1">';
         echo '<input type="hidden" form="f1" value="'.$_GET['day'].'" name="mealday" />';
         echo '<input type="hidden" form="f1" value="'.$_GET['meal'].'" name="mealtype" />';
+?>
+
+    <p class="text">To save your changes, press Tab</p>
+    
+<?php
         echo '<label style="font-family: sans-serif;">Meal Name</label>';
-        echo '<input type="text" name="mealname" id="mealname" placeholder="Meal name" form="f1" value="'.$row[$column_name].'" onchange="document.getElementById('."'f1'".').submit()"/>';
+        echo '<br />';
+        echo '<input  class="textbox" type="text" name="mealname" id="mealname" placeholder="Meal name" form="f1" value="'.$row[$column_name].'" onchange="document.getElementById('."'f1'".').submit()"/>';
         echo '<br /><br />';
         echo '<label style="font-family: sans-serif;">Notes</label>';
-        echo '<input type="text" name="mealnote" id="mealnote" placeholder="Notes" form="f1" value="'.$row[$column_note].'" onchange="document.getElementById('."'f1'".').submit()"/>';
+        echo '<br />';
+        echo '<textarea class="textbox"  style="height: 200px; width: 60%; font-family: sans-serif" type="submit" name="mealnote" id="mealnote" placeholder="Notes" form="f1" onchange="document.getElementById('."'f1'".').submit()"/>'.$row[$column_note].'</textarea>';
         echo '</form>';
 
 ?>
