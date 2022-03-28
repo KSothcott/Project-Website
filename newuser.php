@@ -1,6 +1,3 @@
-<?php
-include_once('cookiecheck.php');
-?>
 
 <script>
 function check_passwords_match()
