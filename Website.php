@@ -59,6 +59,17 @@ include_once('cookiecheck.php');
     
 </style>
 </head>
+<script>
+function clearAlert() {
+  var alert;
+  if (confirm("Are you sure you want to clear the existing meal plan?")) {
+    window.location.href = 'clearmealplan.php';
+  } else {
+    window.location.href = 'website.php';
+  }
+  document.getElementById("alert").innerHTML = alert;
+}
+</script>
 <body>
     
     <div class="icon-bar" style="font-family: sans-serif;">
@@ -75,10 +86,10 @@ include_once('cookiecheck.php');
     
     <img src="Meal_Planner_Logo.png" style="float: right;width: 300px;height: 300px;padding-right: 50px;"/>
     <br /><br />
-    <a href="clearmealplan.php" class="button">Create a new meal plan</a>
-    <br /><br /><br /><br /><br />
-    <a href="mealplanner.php" class="button">Edit a previous meal plan</a>
-    <br /><br /><br /><br /><br />
+    <a href="mealplanner.php" class="button">View current meal plan</a>
+    <br /><br />
+    <button class="button" onclick="clearAlert()">Create a new meal plan</button>
+    <br /><br />
     <a href="shoppinglist.php" class="button">Create or edit a shopping list</a>
 
 </body>
