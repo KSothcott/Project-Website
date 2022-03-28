@@ -75,9 +75,11 @@ include_once('cookiecheck.php');
     
     <img src="Meal_Planner_Logo.png" style="float: right;width: 300px;height: 300px;padding-right: 50px;"/>
     <br /><br />
-    <a href="http://192.168.1.95/kathleen/mealplanner.php" class="button">Click here to create a meal plan</a>
+    <a href="clearmealplan.php" class="button">Create a new meal plan</a>
     <br /><br /><br /><br /><br />
-    <a href="http://192.168.1.95/kathleen/shoppinglist.php" class="button">Click here to create a shopping list</a>
+    <a href="mealplanner.php" class="button">Edit a previous meal plan</a>
+    <br /><br /><br /><br /><br />
+    <a href="shoppinglist.php" class="button">Create or edit a shopping list</a>
 
 </body>
 </html>
