@@ -139,19 +139,19 @@ function create_new_user()
      <form action="newuserprocess.php" method="post" id="f1" name="f1">
 
         <label class="label">First name</label>
-        <input type="text" name="firstname" id="firstname" placeholder="First name" form="f1"/> <br/><br/>
+        <input style="font-size: 14pt;" type="text" name="firstname" id="firstname" placeholder="First name" form="f1"/> <br/><br/>
        
         <label class="label">Last name</label>
-        <input type="text" name="lastname" id="lastname" placeholder="Last name" form="f1"/> <br/><br/>
+        <input style="font-size: 14pt;" type="text" name="lastname" id="lastname" placeholder="Last name" form="f1"/> <br/><br/>
          
         <label class="label">Email address</label>
-        <input type="email" name="email" id="email" placeholder="Enter your email address" form="f1"/> <br/><br/>
+        <input style="font-size: 14pt;" type="email" name="email" id="email" placeholder="Enter your email address" form="f1"/> <br/><br/>
 
         <label class="label">Create a password</label>
-        <input type="password" id="password" name="password" placeholder="Enter your password" form="f1"/><br/><br/> 
+        <input style="font-size: 14pt;" type="password" id="password" name="password" placeholder="Enter your password" form="f1"/><br/><br/> 
         
         <label class="label">Re-enter your password</label>
-        <input type="password" id="password2" name="password2" placeholder="Re-enter your password" form="f1"/><br/><br/> 
+        <input style="font-size: 14pt;" type="password" id="password2" name="password2" placeholder="Re-enter your password" form="f1"/><br/><br/> 
 
      </form>
         <button class="button" style="font-size: 12pt;" onclick="create_new_user()">Create account</button>

@@ -39,7 +39,28 @@ include_once('cookiecheck.php');
         font-family: sans-serif;
     }
     
-    .button {
+    .button1 {
+        border: 2px solid black;
+        background-color: white;
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+        font-family: sans-serif;
+        font-size: 15pt;
+        margin: 0px;
+        text-align: center;
+        position: absolute;
+        left: 40%;
+        right: 40%;        
+    }
+    
+    .button1:hover {
+    background-color: #d1f1f1;
+    transition: all 0.4s ease;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.10), 0 17px 50px 0 rgba(0,0,0,0.10);
+    }
+    
+    .button2 {
         border: 2px solid black;
         background-color: white;
         padding: 10px;
@@ -52,7 +73,7 @@ include_once('cookiecheck.php');
         cursor: pointer;
     } 
        
-    .button:hover {
+    .button2:hover {
     background-color: #d1f1f1;
     transition: all 0.4s ease;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.10), 0 17px 50px 0 rgba(0,0,0,0.10);
@@ -87,11 +108,13 @@ function clearAlert() {
     
     <img src="Meal_Planner_Logo.png" style="float: right;width: 300px;height: 300px;padding-right: 50px;"/>
     <br /><br />
-    <a href="mealplanner.php" class="button">View current meal plan</a>
-    <br /><br />
-    <button class="button" onclick="clearAlert()">Create a new meal plan</button>
-    <br /><br />
-    <a href="shoppinglist.php" class="button">Create or edit a shopping list</a>
+    <a href="mealplanner.php" class="button1">View current meal plan</a>
+    <br /><br /><br /><br /><br /><br />
+    <button class="button1" onclick="clearAlert()">Create a new meal plan</button>
+    <br /><br /><br /><br /><br /><br />
+    <a href="shoppinglist.php" class="button1">Create or edit a shopping list</a>
+    <br /><br /><br /><br /><br />
+    <a href="logout.php" style="float:right;" class="button2">Log out</a>
 
 </body>
 </html>
