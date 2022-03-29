@@ -72,7 +72,7 @@ function selectday($day,$meal){
     }
     
     td {
-        font-size:  17pt;
+        font-size:  15pt;
         background-color: white;
         border: 1px solid gray;
         border-collapse: collapse;
@@ -124,7 +124,7 @@ function selectday($day,$meal){
     <p>Meal Planner</p>
     </div>
     
-    <button onclick="window.print()" class="button" style="float: right; margin-right: 120px;">Print meal plan</button>
+    <button onclick="window.print()" class="button" style="float: right; margin-right: 120px; font-size: 15pt;">Print meal plan</button>
     <br />
     <p class="text">To view more details or edit a meal, click on it in the table</p>
 
@@ -141,7 +141,7 @@ function selectday($day,$meal){
     </tr>
     
     <tr>
-        <td style="background-color: #b3e6e6; text-align: center; padding: 10px; font-weight: bold;">Breakfast</td>
+        <td style="background-color: #b3e6e6; text-align: center; padding: 10px; font-weight: bold; font-size: 17pt;">Breakfast</td>
         <td onclick="selectday('1','B')"><?php echo $row['1BName'];?></td>
         <td onclick="selectday('2','B')"><?php echo $row['2BName'];?></td>
         <td onclick="selectday('3','B')"><?php echo $row['3BName'];?></td>
@@ -152,7 +152,7 @@ function selectday($day,$meal){
     </tr>
     
     <tr>
-        <td style="background-color: #b3e6e6; text-align: center; padding: 10px; font-weight: bold;">Lunch</td>
+        <td style="background-color: #b3e6e6; text-align: center; padding: 10px; font-weight: bold; font-size: 17pt;">Lunch</td>
         <td onclick="selectday('1','L')"><?php echo $row['1LName'];?></td>
         <td onclick="selectday('2','L')"><?php echo $row['2LName'];?></td>
         <td onclick="selectday('3','L')"><?php echo $row['3LName'];?></td>
@@ -163,7 +163,7 @@ function selectday($day,$meal){
     </tr>
     
     <tr>
-        <td style="background-color: #b3e6e6; text-align: center; padding: 10px; font-weight: bold;">Dinner</td>
+        <td style="background-color: #b3e6e6; text-align: center; padding: 10px; font-weight: bold; font-size: 17pt;">Dinner</td>
         <td onclick="selectday('1','D')"><?php echo $row['1DName'];?></td>
         <td onclick="selectday('2','D')"><?php echo $row['2DName'];?></td>
         <td onclick="selectday('3','D')"><?php echo $row['3DName'];?></td>

@@ -49,6 +49,7 @@ include_once('cookiecheck.php');
         font-size: 15pt;
         margin: 50px;
         text-align: center;
+        cursor: pointer;
     } 
        
     .button:hover {
