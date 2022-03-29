@@ -54,6 +54,12 @@
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.10), 0 17px 50px 0 rgba(0,0,0,0.10);
     }
     
+    .label {
+        margin: 20px;
+        font-family: sans-serif;
+        font-size: 15pt;
+    }
+    
 </style>
 </head>
 <script>
@@ -80,19 +86,20 @@ window.onload = function()
      <form action="login_process.php" method="post" id="f1" name="f1">
 
 
-        <label style="font-family: sans-serif;">Email address</label>
+        <label class="label">Email address</label>
 
         <input type="email" name="email" id="email" placeholder="Enter your email" form="f1"/> <br/><br/>
 
-        <label style="font-family: sans-serif;">Password</label>
+        <label class="label">Password</label>
 
         <input type="password" name="password" id="password" placeholder="Enter your password" form="f1"/><br/><br/> 
 
-        <button onclick="document.getElementById('f1').submit()">Login</button>
+        <button class="button" style="font-size: 12pt;" onclick="document.getElementById('f1').submit()">Login</button>
 
      </form>
      
-    <br /><br />
+    <br />
     <a href="http://192.168.1.95/kathleen/newuser.php" class="button">New user? Click here to create an account</a>
+    
 </body>
 </html>

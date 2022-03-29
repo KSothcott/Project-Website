@@ -72,10 +72,10 @@ include_once('cookiecheck.php');
     <div class="heading">
     <p>Settings</p>
     </div>
-    
-    <a href="http://192.168.1.95/kathleen/newuser.php" class="button">Click here to create an account</a>
+    <br /><br />
+    <a href="http://192.168.1.95/kathleen/newuser.php" class="button">Create an account</a>
     <br /><br /><br /><br /> 
-    <a href="http://192.168.1.95/kathleen/login.php" class="button">Click here to login to your account</a>
+    <a href="http://192.168.1.95/kathleen/login.php" class="button">Login to your account</a>
 
 </body>
 </html>
