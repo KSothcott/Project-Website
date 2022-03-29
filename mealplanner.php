@@ -77,6 +77,37 @@ function selectday($day,$meal){
         border: 1px solid gray;
         border-collapse: collapse;
     }
+    .text {
+        margin-left: 50px;
+        font-size: 15pt;
+        font-family: sans-serif;
+    }
+    input[type="button"] {
+   		border: 2px solid black;
+        background-color: white;
+        font-family: sans-serif;
+        padding: 10px;
+	}
+    .button {
+        border: 2px solid black;
+        background-color: white;
+        padding: 10px;
+        margin: 20px;
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+        height: 50px;
+        width: 200px;
+        font-size: 12pt;
+    }
+    .button:hover {
+    background-color: #d1f1f1;
+    transition: all 0.4s ease;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.10), 0 17px 50px 0 rgba(0,0,0,0.10);
+    }
+    @page {
+    size: landscape;
+    }
 </style>
 </head>
 <body>
@@ -93,6 +124,10 @@ function selectday($day,$meal){
     <p>Meal Planner</p>
     </div>
     
+    <button onclick="window.print()" class="button" style="float: right; margin-right: 120px;">Print meal plan</button>
+    <br />
+    <p class="text">To view more details or edit a meal, click on it in the table</p>
+
     <table>
     <tr>
         <th style="background-color: white;"></th>
