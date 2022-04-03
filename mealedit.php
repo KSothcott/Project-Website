@@ -139,6 +139,8 @@ function editMeal()
         echo '<input class="textbox" type="text" name="mealname" id="mealname" placeholder="Meal name" form="f1" value="'.$row[$column_name].'" onchange="document.getElementById('."'f1'".').submit()"/>';
         echo '<br /><br />';
         echo '<label class="label">Notes</label>';
+        echo '<br /><p style="font-size: 10pt;"> </p>';
+        echo '<label class="label" style="font-size: 12pt;">Here you can add any notes, ingredients and recipe links for your meal</label>';
         echo '<br />';
         echo '<textarea class="textbox"  style="height: 200px; width: 60%; font-family: sans-serif" type="submit" name="mealnote" id="mealnote" placeholder="Notes" form="f1" onchange="document.getElementById('."'f1'".').submit()"/>'.$row[$column_note].'</textarea>';
         echo '</form>';

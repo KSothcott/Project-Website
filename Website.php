@@ -51,7 +51,8 @@ include_once('cookiecheck.php');
         text-align: center;
         position: absolute;
         left: 40%;
-        right: 40%;        
+        right: 40%;
+        cursor: pointer;        
     }
     
     .button1:hover {

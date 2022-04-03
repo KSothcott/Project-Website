@@ -7,6 +7,7 @@
 	<title>Shopping List</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kalam">
 	<script>
 	function addItem() {
 		var newItem = document.createElement("div");
@@ -69,13 +70,17 @@
 		text-align: center;
         font-family: sans-serif;
 	}
-	.list {
-		width: 100%;
-		float: center; 
+	.list { 
 		padding: 10px; 
-    	margin: 20px;
-        font-family: sans-serif;
-        cursor: pointer;
+    	margin: 50px;
+        font-family: "Kalam", sans-serif;
+        cursor: text;
+        position: absolute;
+        right: 50px;
+        width: 60%;
+        border: 3px dashed #7bc9c9;
+        padding: 10px;
+        font-size: 17pt;
 	}
   	input[type="button"] {
    		border: 2px solid black;
@@ -110,7 +115,7 @@
     }    
 	</style>
 </head>
-<body onload="document.getElementById('box').focus()">
+<body onload="document.getElementById('item').focus()">
 
     <div class="icon-bar" style="font-family: sans-serif;">
         <a href="http://192.168.1.95/kathleen/website.php" style="font-size: 47px;"><i class="fa fa-home"></i></a> 
@@ -123,17 +128,12 @@
 	<div class="heading">
 	<p>Shopping List</p>
 	</div>
-	<div class="list">
+    
     <button onclick="clearList()" class="button">New list</button><button onclick="window.print()" class="button">Print list</button>
     <br />
-	</div>
     
+    <div class="list">   
 <?php
-
-    echo '<form action="shoppinglistprocess.php" method="post" id="f1" name="f1">';
-    echo '<input class="textbox" type="text" name="item" id="item" placeholder="Add item" form="f1" onchange="document.getElementById('."'f1'".').submit()"/>';
-    echo '</form>';
-
     $filename = "/var/www/html/kathleen/lists/";
     $filename.=$_COOKIE['UserID']."shoppinglist.txt"; 
    
@@ -141,8 +141,15 @@
     $stringout = fread($filehandle, filesize($filename));
    
     echo $stringout;
-    fclose($filehandle)
-    
+    fclose($filehandle)    
 ?>
+    </div>
+    
+<?php
+    echo '<form action="shoppinglistprocess.php" method="post" id="f1" name="f1">';
+    echo '<input class="textbox" type="text" name="item" id="item" placeholder="Add item" form="f1" onchange="document.getElementById('."'f1'".').submit()"/>';
+    echo '</form>';
+?>
+
 </body>
 </html>
