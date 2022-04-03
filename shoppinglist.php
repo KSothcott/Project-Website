@@ -8,40 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kalam">
-	<script>
-	function addItem() {
-		var newItem = document.createElement("div");
-		newItem.innerHTML = document.getElementById("box").value;
-		newItem.onclick = removeItem;
-		document.getElementById("list").appendChild(newItem)
-		saveList();
-	}
-	function removeItem() {
-		document.getElementById("list").removeChild(this);
-		saveList();
-	}
-	function saveList() {
-		localStorage.storedList = document.getElementById("list").innerHTML;
-	}
-	function loadList() {
-		document.getElementById("list").innerHTML = localStorage.storedList;
-		for(var i = 0; i < list.children.length; i++) {
-		list.children[i].onclick = removeItem;
-		}
-	}
-    function clearList() {
-        document.getElementById("list");
-            localStorage.clear();
-            location.reload();
-    }
-   
-    function enterItem() {        
-    addItem();
-    document.getElementById("box").value="";
-    document.getElementById("box").focus();
-    } 
-    
-	</script>
+
 	<style>
 	.icon-bar {
     width: 100%;
@@ -99,6 +66,7 @@
         height: 50px;
         width: 100px;
         font-size: 12pt;
+        font-family: sans-serif;
     }
     .button:hover {
     background-color: #d1f1f1;
@@ -129,10 +97,15 @@
 	<p>Shopping List</p>
 	</div>
     
-    <button onclick="clearList()" class="button">New list</button><button onclick="window.print()" class="button">Print list</button>
-    <br />
+    <a href="http://192.168.1.95/kathleen/newlist.php" class="button">New list</a><a onclick="window.print()" class="button">Print list</a>
+    <br /><br />
     
-    <div class="list">   
+    <div class="text">
+    <p>Press enter to add an item</p>
+    </div>
+    
+    <div class="list">
+    <p>Shopping List:</p>   
 <?php
     $filename = "/var/www/html/kathleen/lists/";
     $filename.=$_COOKIE['UserID']."shoppinglist.txt"; 
