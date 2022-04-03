@@ -126,18 +126,23 @@
 	<div class="list">
     <button onclick="clearList()" class="button">New list</button><button onclick="window.print()" class="button">Print list</button>
     <br />
-    <p class="text">Type each item in the text box, then click 'Add Item' or press Enter<br/><br/> Click on an item in the list to remove it</p>
-	<input class="textbox" type="text" id="box" placeholder="Type an item" size="50px" onchange="enterItem()"/>
-	<br/>
-	<input type="button" value="Add Item" id="button" class="button" onclick="addItem();"/>
-	<br/>
-	<div id="list"></div>
 	</div>
     
-	<script>
-		if(localStorage.storedList) {
-		loadList();
-		}
-	</script>
+<?php
+
+    echo '<form action="shoppinglistprocess.php" method="post" id="f1" name="f1">';
+    echo '<input class="textbox" type="text" name="item" id="item" placeholder="Add item" form="f1" onchange="document.getElementById('."'f1'".').submit()"/>';
+    echo '</form>';
+
+    $filename = "/var/www/html/kathleen/lists/";
+    $filename.=$_COOKIE['UserID']."shoppinglist.txt"; 
+   
+    $filehandle=fopen($filename,'r');
+    $stringout = fread($filehandle, filesize($filename));
+   
+    echo $stringout;
+    fclose($filehandle)
+    
+?>
 </body>
 </html>
