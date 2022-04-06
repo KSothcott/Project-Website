@@ -49,12 +49,6 @@
         padding: 10px;
         font-size: 17pt;
 	}
-  	input[type="button"] {
-   		border: 2px solid black;
-        background-color: white;
-        font-family: sans-serif;
-        padding: 10px;
-	}
     .button {
         border: 2px solid black;
         background-color: white;
@@ -75,6 +69,8 @@
     }
     .text {
         margin: 20px;
+        font-size: 12pt;
+        font-family: sans-serif
     }
     .textbox {
         margin: 20px;
@@ -101,7 +97,7 @@
     <br /><br />
     
     <div class="text">
-    <p>Press enter to add an item</p>
+    <p>Click 'Add Item' or press enter to add an item</p>
     </div>
     
     <div class="list">
@@ -120,7 +116,8 @@
     
 <?php
     echo '<form action="shoppinglistprocess.php" method="post" id="f1" name="f1">';
-    echo '<input class="textbox" type="text" name="item" id="item" placeholder="Add item" form="f1" onchange="document.getElementById('."'f1'".').submit()"/>';
+    echo '<input class="textbox" type="text" name="item" id="item" placeholder="Add item" form="f1"/>';
+    echo '<button class="button" onclick="document.getElementById('."'f1'".').submit()">Add Item</button>';
     echo '</form>';
 ?>
 

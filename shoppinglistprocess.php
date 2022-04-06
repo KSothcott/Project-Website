@@ -9,12 +9,7 @@ include_once('cookiecheck.php');
     
     fwrite($filehandle,$_POST[item]."<br />");
     fclose($filehandle);
-    
-    //$filehandle=fopen("/var/www/html/kathleen/lists/testlist.txt","r");
-    //$stringout = fread($filehandle, 100000);
-    //echo $stringout;
-    //$fclose($filehandle);
-    
+
 ?>
 
 <html><body onload="window.location.href='shoppinglist.php'"></body></html>
