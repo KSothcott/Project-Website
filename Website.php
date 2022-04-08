@@ -93,7 +93,7 @@ function clearAlert() {
   document.getElementById("alert").innerHTML = alert;
 }
 </script>
-<body>
+<body style="background-color: white;">
     
     <div class="icon-bar" style="font-family: sans-serif;">
         <a href="http://192.168.1.95/kathleen/website.php" style="font-size: 47px;"><i class="fa fa-home"></i></a> 
@@ -111,7 +111,7 @@ function clearAlert() {
     <br /><br />
     <a href="mealplanner.php" class="button1">View current meal plan</a>
     <br /><br /><br /><br /><br /><br />
-    <button class="button1" onclick="clearAlert()">Create a new meal plan</button>
+    <a class="button1" onclick="clearAlert()">Create a new meal plan</a>
     <br /><br /><br /><br /><br /><br />
     <a href="shoppinglist.php" class="button1">Create or edit a shopping list</a>
     <br /><br /><br /><br /><br />

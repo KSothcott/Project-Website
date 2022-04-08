@@ -90,7 +90,6 @@ function create_new_user()
 
     
     .heading {
-        float: center;
 		font-size: 34px;
 		margin: 20px;
 		text-align: center;
@@ -105,6 +104,7 @@ function create_new_user()
         color: black;
         font-family: sans-serif;
         margin: 20px;
+        cursor: pointer;
     }
     
     .button:hover {
@@ -122,7 +122,7 @@ function create_new_user()
 </style>
 </head>
 
-<body>
+<body style="background-color: white;">
 
     <div class="icon-bar" style="font-family: sans-serif;">
         <a href="http://192.168.1.95/kathleen/website.php" style="font-size: 47px;"><i class="fa fa-home"></i></a> 

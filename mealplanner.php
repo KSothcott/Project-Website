@@ -110,7 +110,7 @@ function selectday($day,$meal){
     }
 </style>
 </head>
-<body>
+<body style="background-color: white;">
     
     <div class="icon-bar" style="font-family: sans-serif;">
         <a href="http://192.168.1.95/kathleen/website.php" style="font-size: 47px;"><i class="fa fa-home"></i></a> 
