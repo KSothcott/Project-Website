@@ -127,22 +127,23 @@ function selectday($day,$meal){
     
     <button onclick="window.print()" class="button" style="float: right; margin-right: 120px; font-size: 15pt;">Print meal plan</button>
     <br />
-    <p class="text">To view more details or edit a meal, click on it in the table</p>
+    <p class="text">To view more details or edit a meal, click on it in the table<br /><br />
+    Click on any of the blue boxes to change the day or meal name</p>
 
-    <table>
+    <table style="cursor: pointer;">
     <tr>
         <th style="background-color: white;"></th>
-        <th>Monday</th>
-        <th>Tuesday</th>
-        <th>Wednesday</th>
-        <th>Thursday</th>
-        <th>Friday</th>
-        <th>Saturday</th>
-        <th>Sunday</th>
+        <th><div contenteditable>Monday</div></th>
+        <th><div contenteditable>Tuesday</div></th>
+        <th><div contenteditable>Wednesday</div></th>
+        <th><div contenteditable>Thursday</div></th>
+        <th><div contenteditable>Friday</div></th>
+        <th><div contenteditable>Saturday</div></th>
+        <th><div contenteditable>Sunday</div></th>
     </tr>
     
     <tr>
-        <td style="background-color: #b3e6e6; text-align: center; padding: 10px; font-weight: bold; font-size: 17pt;">Breakfast</td>
+        <td style="background-color: #b3e6e6; text-align: center; padding: 10px; font-weight: bold; font-size: 17pt;"><div contenteditable>Breakfast</div></td>
         <td onclick="selectday('1','B')"><?php echo $row['1BName'];?></td>
         <td onclick="selectday('2','B')"><?php echo $row['2BName'];?></td>
         <td onclick="selectday('3','B')"><?php echo $row['3BName'];?></td>
@@ -153,7 +154,7 @@ function selectday($day,$meal){
     </tr>
     
     <tr>
-        <td style="background-color: #b3e6e6; text-align: center; padding: 10px; font-weight: bold; font-size: 17pt;">Lunch</td>
+        <td style="background-color: #b3e6e6; text-align: center; padding: 10px; font-weight: bold; font-size: 17pt;"><div contenteditable>Lunch</div></td>
         <td onclick="selectday('1','L')"><?php echo $row['1LName'];?></td>
         <td onclick="selectday('2','L')"><?php echo $row['2LName'];?></td>
         <td onclick="selectday('3','L')"><?php echo $row['3LName'];?></td>
@@ -164,7 +165,7 @@ function selectday($day,$meal){
     </tr>
     
     <tr>
-        <td style="background-color: #b3e6e6; text-align: center; padding: 10px; font-weight: bold; font-size: 17pt;">Dinner</td>
+        <td style="background-color: #b3e6e6; text-align: center; padding: 10px; font-weight: bold; font-size: 17pt;"><div contenteditable>Dinner</div></td>
         <td onclick="selectday('1','D')"><?php echo $row['1DName'];?></td>
         <td onclick="selectday('2','D')"><?php echo $row['2DName'];?></td>
         <td onclick="selectday('3','D')"><?php echo $row['3DName'];?></td>
