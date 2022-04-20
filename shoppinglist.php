@@ -32,7 +32,6 @@
     }
 
     .heading {
-        float: center;
 		font-size: 34px;
 		margin: 20px;
 		text-align: center;
@@ -47,7 +46,6 @@
         right: 50px;
         width: 600px;
         border: 3px dashed #7bc9c9;
-        padding: 10px;
         font-size: 17pt;
 	}
     .button {
