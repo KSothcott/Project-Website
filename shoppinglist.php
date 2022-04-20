@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kalam">
-
+	
 	<style>
 	.icon-bar {
     width: 100%;
@@ -38,14 +38,14 @@
 		text-align: center;
         font-family: sans-serif;
 	}
-	.list { 
+	.list {
 		padding: 10px; 
     	margin: 50px;
         font-family: "Kalam", sans-serif;
         cursor: text;
         position: absolute;
         right: 50px;
-        width: 60%;
+        width: 600px;
         border: 3px dashed #7bc9c9;
         padding: 10px;
         font-size: 17pt;
@@ -71,47 +71,56 @@
     .text {
         margin: 20px;
         font-size: 12pt;
-        font-family: sans-serif
+        font-family: sans-serif;
     }
     .textbox {
         margin: 20px;
         padding: 10px;
         font-size: 11pt;
-    }    
+    }
 	</style>
 </head>
 <body onload="document.getElementById('item').focus()" style="background-color: white;">
 
     <div class="icon-bar" style="font-family: sans-serif;">
-        <a href="http://192.168.1.95/kathleen/website.php" style="font-size: 47px;"><i class="fa fa-home"></i></a> 
+        <a href="https://brendansothcott.co.uk/kathleen/website.php" style="font-size: 47px;"><i class="fa fa-home"></i></a> 
         <a style="background-color: #7bc9c9;">  </a> 
         <a style="background-color: #7bc9c9;">My Meal Planner</a> 
         <a style="background-color: #7bc9c9;">  </a>
-        <a href="http://192.168.1.95/kathleen/settings.php" style="font-size: 47px;"><i class="fa fa-gear"></i></a> 
+        <a href="https://brendansothcott.co.uk/kathleen/settings.php" style="font-size: 47px;"><i class="fa fa-gear"></i></a> 
     </div>
-
+    
 	<div class="heading">
 	<p>Shopping List</p>
 	</div>
-    
-    <a href="http://192.168.1.95/kathleen/newlist.php" class="button">New list</a><a onclick="window.print()" class="button">Print list</a>
+	
+    <a href="https://brendansothcott.co.uk/kathleen/newlist.php" class="button">New list</a>
+ <?php
+        function list_to_print($id)
+        {
+            $filename = $id.'shoppinglist.txt';
+            $outstring = "window.open('printlist.php?list=".$id."shoppinglist.txt','_blank')";
+            return($outstring);
+        }
+ ?>
+    <a onclick="<?php echo list_to_print($_COOKIE['UserID']);?>" class="button">Print list</a>
     <br /><br />
     
     <div class="text">
     <p>Click 'Add Item' or press enter to add an item</p>
-    </div>
-    
+    </div>                                                  
+
     <div class="list">
-    <p>Shopping List:</p>   
+    <p>Shopping List:</p>
 <?php
-    $filename = "/var/www/html/kathleen/lists/";
+    $filename = "./lists/";
     $filename.=$_COOKIE['UserID']."shoppinglist.txt"; 
    
     $filehandle=fopen($filename,'r');
     $stringout = fread($filehandle, filesize($filename));
    
     echo $stringout;
-    fclose($filehandle)    
+    fclose($filehandle)       
 ?>
     </div>
     
