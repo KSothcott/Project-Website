@@ -3,7 +3,7 @@
 <head>
 
     <title>Login</title>
-
+    
 <link rel="icon" type="image/x-icon" href="favicon.ico.png">
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -68,40 +68,40 @@
 window.onload = function()
 {
     document.getElementById('email').focus();
-};
+}
 
 </script>
 
 <body style="background-color: white;">
     <div class="icon-bar" style="font-family: sans-serif;">
-        <a href="http://192.168.1.95/kathleen/website.php" style="font-size: 47px;"><i class="fa fa-home"></i></a> 
+        <a href="https://brendansothcott.co.uk/kathleen/website.php" style="font-size: 47px;"><i class="fa fa-home"></i></a> 
         <a style="background-color: #7bc9c9;">  </a> 
         <a style="background-color: #7bc9c9;">My Meal Planner</a> 
         <a style="background-color: #7bc9c9;">  </a>
-        <a href="http://192.168.1.95/kathleen/settings.php" style="font-size: 47px;"><i class="fa fa-gear"></i></a> 
+        <a href="https://brendansothcott.co.uk/kathleen/settings.php" style="font-size: 47px;"><i class="fa fa-gear"></i></a> 
     </div>
 
     <div class="heading">
     <p>Login</p>
     </div>
-    
+
      <form action="login_process.php" method="post" id="f1" name="f1">
 
 
         <label class="label">Email address</label>
 
-        <input type="email" name="email" id="email" placeholder="Enter your email" form="f1"/> <br/><br/>
-
+        <input type="email" name="email" style="font-size: 14pt;" id="email" placeholder="Enter your email" form="f1"/> <br/><br/>
+        
         <label class="label">Password</label>
 
-        <input type="password" name="password" id="password" placeholder="Enter your password" form="f1"/><br/><br/> 
+        <input type="password" name="password" style="font-size: 14pt;" id="password" placeholder="Enter your password" form="f1"/><br/><br/> 
 
         <button class="button" style="font-size: 12pt;" onclick="document.getElementById('f1').submit()">Login</button>
 
      </form>
      
     <br />
-    <a href="http://192.168.1.95/kathleen/newuser.php" class="button">New user? Click here to create an account</a>
+    <a href="https://brendansothcott.co.uk/kathleen/newuser.php" class="button">New user? Click here to create an account</a>
     
 </body>
 </html>

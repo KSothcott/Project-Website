@@ -10,4 +10,4 @@
     $con = null;
 
 ?>
-<html><body onload="window.location.href='mealedit.php?<?php echo 'day='.$_POST['mealday'].'&meal='.$_POST['mealtype'];?>'"></body></html>
+<html><body onload="window.location.href='https://brendansothcott.co.uk/kathleen/mealedit.php?<?php echo 'day='.$_POST['mealday'].'&meal='.$_POST['mealtype'];?>'"></body></html>

@@ -52,8 +52,8 @@ include_once('cookiecheck.php');
         text-align: center;
         position: absolute;
         left: 40%;
-        right: 40%;
-        cursor: pointer;        
+        right: 40%; 
+        cursor: pointer;      
     }
     
     .button1:hover {
@@ -87,9 +87,9 @@ include_once('cookiecheck.php');
 function clearAlert() {
   var alert;
   if (confirm("Are you sure you want to clear the existing meal plan?")) {
-    window.location.href = 'clearmealplan.php';
+    window.location.href = 'https://brendansothcott.co.uk/kathleen/clearmealplan.php';
   } else {
-    window.location.href = 'website.php';
+    window.location.href = 'https://brendansothcott.co.uk/kathleen/website.php';
   }
   document.getElementById("alert").innerHTML = alert;
 }
@@ -97,11 +97,11 @@ function clearAlert() {
 <body style="background-color: white;">
     
     <div class="icon-bar" style="font-family: sans-serif;">
-        <a href="http://192.168.1.95/kathleen/website.php" style="font-size: 47px;"><i class="fa fa-home"></i></a> 
+        <a href="https://brendansothcott.co.uk/kathleen/website.php" style="font-size: 47px;"><i class="fa fa-home"></i></a> 
         <a style="background-color: #7bc9c9;">  </a> 
         <a style="background-color: #7bc9c9;">My Meal Planner</a> 
         <a style="background-color: #7bc9c9;">  </a>
-        <a href="http://192.168.1.95/kathleen/settings.php" style="font-size: 47px;"><i class="fa fa-gear"></i></a> 
+        <a href="https://brendansothcott.co.uk/kathleen/settings.php" style="font-size: 47px;"><i class="fa fa-gear"></i></a> 
     </div>
     
     <div class="heading">
@@ -110,11 +110,11 @@ function clearAlert() {
     
     <img src="Meal_Planner_Logo.png" style="float: right;width: 300px;height: 300px;padding-right: 50px;"/>
     <br /><br />
-    <a href="mealplanner.php" class="button1">View current meal plan</a>
+    <a href="https://brendansothcott.co.uk/kathleen/mealplanner.php" class="button1">View current meal plan</a>
     <br /><br /><br /><br /><br /><br />
     <a class="button1" onclick="clearAlert()">Create a new meal plan</a>
     <br /><br /><br /><br /><br /><br />
-    <a href="shoppinglist.php" class="button1">Create or edit a shopping list</a>
+    <a href="https://brendansothcott.co.uk/kathleen/shoppinglist.php" class="button1">Create or edit a shopping list</a>
     <br /><br /><br /><br /><br />
     <a href="logout.php" style="float:right;" class="button2">Log out</a>
 

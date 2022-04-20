@@ -1,7 +1,7 @@
 <script>
 
 function selectday($day,$meal){
-    var $outstring = "mealedit.php?day="+$day+"&meal="+$meal; 
+    var $outstring = "https://brendansothcott.co.uk/kathleen/mealedit.php?day="+$day+"&meal="+$meal; 
     window.location.href=$outstring;
 }
 
@@ -64,7 +64,7 @@ function selectday($day,$meal){
         text-align: center;
         position: absolute;
         left: 40%;
-        right: 40%;
+        right: 40%;        
     }
     
     .button1:hover {
@@ -109,11 +109,11 @@ function selectday($day,$meal){
 <body style="background-color: white;">
 
     <div class="icon-bar" style="font-family: sans-serif;">
-        <a href="http://192.168.1.95/kathleen/website.php" style="font-size: 47px;"><i class="fa fa-home"></i></a> 
+        <a href="https://brendansothcott.co.uk/kathleen/website.php" style="font-size: 47px;"><i class="fa fa-home"></i></a> 
         <a style="background-color: #7bc9c9;">  </a> 
         <a style="background-color: #7bc9c9;">My Meal Planner</a> 
         <a style="background-color: #7bc9c9;">  </a>
-        <a href="http://192.168.1.95/kathleen/settings.php" style="font-size: 47px;"><i class="fa fa-gear"></i></a> 
+        <a href="https://brendansothcott.co.uk/kathleen/settings.php" style="font-size: 47px;"><i class="fa fa-gear"></i></a> 
     </div>
     
     <div class="heading">
@@ -135,7 +135,7 @@ function selectday($day,$meal){
     $result = $con->query($query);
     $row = $result->fetch(PDO::FETCH_ASSOC);
     ?>
-
+    
     <a href="mealplanner.php" class="button2">Return to meal plan</a>
     <br /><br />
     <label class="label">Meal Name:</label>
@@ -143,6 +143,6 @@ function selectday($day,$meal){
     <br /><br />
     <label class="label">Meal Notes:</label>
     <p class="details"><?php echo "$row[$column_note]"?></p>
-    
+
 </body>
 </html>

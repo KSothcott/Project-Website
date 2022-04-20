@@ -87,7 +87,7 @@ function editMeal()
     
     .text {
         margin: 20px;
-        
+        font-size: 15pt;
     }
     .textbox {
         margin: 20px;
@@ -106,11 +106,11 @@ function editMeal()
 <body style="font-family: sans-serif; background-color: white;">
 
     <div class="icon-bar" style="font-family: sans-serif;">
-        <a href="http://192.168.1.95/kathleen/website.php" style="font-size: 47px;"><i class="fa fa-home"></i></a> 
+        <a href="https://brendansothcott.co.uk/kathleen/website.php" style="font-size: 47px;"><i class="fa fa-home"></i></a> 
         <a style="background-color: #7bc9c9;">  </a> 
         <a style="background-color: #7bc9c9;">My Meal Planner</a> 
         <a style="background-color: #7bc9c9;">  </a>
-        <a href="http://192.168.1.95/kathleen/settings.php" style="font-size: 47px;"><i class="fa fa-gear"></i></a> 
+        <a href="https://brendansothcott.co.uk/kathleen/settings.php" style="font-size: 47px;"><i class="fa fa-gear"></i></a> 
     </div>
     
     <div class="heading">
@@ -126,20 +126,20 @@ function editMeal()
     $result = $con->query($query);
     $row = $result->fetch(PDO::FETCH_ASSOC);
     
-        echo '<form action="mealeditprocess.php" method="post" id="f1" name="f1">';
+        echo '<form action="https://brendansothcott.co.uk/kathleen/mealeditprocess.php" method="post" id="f1" name="f1">';
         echo '<input type="hidden" form="f1" value="'.$_GET['day'].'" name="mealday" />';
         echo '<input type="hidden" form="f1" value="'.$_GET['meal'].'" name="mealtype" />';
 ?>
 
-    <a href="mealplanner.php" class="button">Save changes</a>
+    <a href="https://brendansothcott.co.uk/kathleen/mealplanner.php" class="button">Save changes</a>
     <br /><br /><br />
     
 <?php
-        echo '<label class="label">Meal Name</label>';
+        echo '<label class="label">Meal Name:</label>';
         echo '<br />';
         echo '<input class="textbox" type="text" name="mealname" id="mealname" placeholder="Meal name" form="f1" value="'.$row[$column_name].'" onchange="document.getElementById('."'f1'".').submit()"/>';
         echo '<br /><br />';
-        echo '<label class="label">Notes</label>';
+        echo '<label class="label">Notes:</label>';
         echo '<br /><p style="font-size: 10pt;"> </p>';
         echo '<label class="label" style="font-size: 12pt;">Here you can add any notes, ingredients and recipe links for your meal</label>';
         echo '<br />';

@@ -12,4 +12,4 @@ include_once('server.php');
     
 ?>
 
-<html><body onload="window.location.href='login.php'"></body></body></html>
+<html><body onload="window.location.href='https://brendansothcott.co.uk/kathleen/login.php'"></body></body></html>

@@ -126,18 +126,18 @@ function create_new_user()
 <body style="background-color: white;">
 
     <div class="icon-bar" style="font-family: sans-serif;">
-        <a href="http://192.168.1.95/kathleen/website.php" style="font-size: 47px;"><i class="fa fa-home"></i></a> 
+        <a href="https://brendansothcott.co.uk/kathleen/website.php" style="font-size: 47px;"><i class="fa fa-home"></i></a> 
         <a style="background-color: #7bc9c9;">  </a> 
         <a style="background-color: #7bc9c9;">My Meal Planner</a> 
         <a style="background-color: #7bc9c9;">  </a>
-        <a href="http://192.168.1.95/kathleen/settings.php" style="font-size: 47px;"><i class="fa fa-gear"></i></a> 
+        <a href="https://brendansothcott.co.uk/kathleen/settings.php" style="font-size: 47px;"><i class="fa fa-gear"></i></a> 
     </div>
     
     <div class="heading">
     <p>Create an Account</p>
     </div>
-    
-     <form action="newuserprocess.php" method="post" id="f1" name="f1">
+     
+     <form action="https://brendansothcott.co.uk/kathleen/newuserprocess.php" method="post" id="f1" name="f1">
 
         <label class="label">First name</label>
         <input style="font-size: 14pt;" type="text" name="firstname" id="firstname" placeholder="First name" form="f1"/> <br/><br/>
@@ -152,13 +152,13 @@ function create_new_user()
         <input style="font-size: 14pt;" type="password" id="password" name="password" placeholder="Enter your password" form="f1"/><br/><br/> 
         
         <label class="label">Re-enter your password</label>
-        <input style="font-size: 14pt;" type="password" id="password2" name="password2" placeholder="Re-enter your password" form="f1"/><br/><br/> 
+        <input style="font-size: 14pt;" type="password" id="password2" name="password2" placeholder="Re-enter your password" form="f1" onchange="check_passwords_match()"/><br/><br/> 
 
      </form>
         <button class="button" style="font-size: 12pt;" onclick="create_new_user()">Create account</button>
      
      
     <br /><br />
-    <a href="http://192.168.1.95/kathleen/login.php" class="button">Already have an account? Click here to login</a>   
+    <a href="https://brendansothcott.co.uk/kathleen/login.php" class="button">Already have an account? Click here to login</a>      
 </body>
 </html>

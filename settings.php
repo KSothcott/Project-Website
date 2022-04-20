@@ -40,7 +40,7 @@ include_once('cookiecheck.php');
         font-family: sans-serif;
     }
     
-    a.button {
+    .button {
         border: 2px solid black;
         background-color: white;
         padding: 10px;
@@ -63,20 +63,20 @@ include_once('cookiecheck.php');
 <body style="background-color: white;">
     
     <div class="icon-bar" style="font-family: sans-serif;">
-        <a href="http://192.168.1.95/kathleen/website.php" style="font-size: 47px;"><i class="fa fa-home"></i></a> 
+        <a href="https://brendansothcott.co.uk/kathleen/website.php" style="font-size: 47px;"><i class="fa fa-home"></i></a> 
         <a style="background-color: #7bc9c9;">  </a> 
         <a style="background-color: #7bc9c9;">My Meal Planner</a> 
         <a style="background-color: #7bc9c9;">  </a>
-        <a href="#" style="font-size: 47px;"><i class="fa fa-gear"></i></a> 
+        <a href="https://brendansothcott.co.uk/kathleen/settings.php" style="font-size: 47px;"><i class="fa fa-gear"></i></a> 
     </div>
     
     <div class="heading">
     <p>Settings</p>
     </div>
     <br /><br />
-    <a href="http://192.168.1.95/kathleen/newuser.php" class="button">Create an account</a>
+    <a href="https://brendansothcott.co.uk/kathleen/newuser.php" class="button">Create an account</a>
     <br /><br /><br /><br /> 
-    <a href="http://192.168.1.95/kathleen/login.php" class="button">Login to your account</a>
+    <a href="https://brendansothcott.co.uk/kathleen/login.php" class="button">Login to your account</a>
 
 </body>
 </html>

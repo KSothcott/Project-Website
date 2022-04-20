@@ -1,7 +1,7 @@
 <script>
 
 function selectday($day,$meal){
-    var $outstring = "mealdetails.php?day="+$day+"&meal="+$meal; 
+    var $outstring = "https://brendansothcott.co.uk/kathleen/mealdetails.php?day="+$day+"&meal="+$meal; 
     window.location.href=$outstring;
 }
 
@@ -15,7 +15,7 @@ function selectday($day,$meal){
     $query = 'SELECT * FROM `mealplan` WHERE `UserID` = '.$_COOKIE['UserID'];
     $result = $con->query($query);
     $row = $result->fetch(PDO::FETCH_ASSOC);
-    
+
 ?>
 <html>
 <head>
@@ -77,6 +77,7 @@ function selectday($day,$meal){
         background-color: white;
         border: 1px solid gray;
         border-collapse: collapse;
+        text-align: center;
     }
     .text {
         margin-left: 50px;
@@ -114,11 +115,11 @@ function selectday($day,$meal){
 <body style="background-color: white;">
     
     <div class="icon-bar" style="font-family: sans-serif;">
-        <a href="http://192.168.1.95/kathleen/website.php" style="font-size: 47px;"><i class="fa fa-home"></i></a> 
+        <a href="https://brendansothcott.co.uk/kathleen/website.php" style="font-size: 47px;"><i class="fa fa-home"></i></a> 
         <a style="background-color: #7bc9c9;">  </a> 
         <a style="background-color: #7bc9c9;">My Meal Planner</a> 
         <a style="background-color: #7bc9c9;">  </a>
-        <a href="http://192.168.1.95/kathleen/settings.php" style="font-size: 47px;"><i class="fa fa-gear"></i></a> 
+        <a href="https://brendansothcott.co.uk/kathleen/settings.php" style="font-size: 47px;"><i class="fa fa-gear"></i></a> 
     </div>
     
     <div class="heading">
@@ -174,9 +175,9 @@ function selectday($day,$meal){
         <td onclick="selectday('6','D')"><?php echo $row['6DName'];?></td>
         <td onclick="selectday('7','D')"><?php echo $row['7DName'];?></td>
     </tr>
-       
-    
+ 
     </table>
-    
+
+
 </body>
 </html>

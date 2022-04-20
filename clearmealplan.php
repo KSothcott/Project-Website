@@ -10,4 +10,4 @@ include_once('cookiecheck.php');
 
 ?>
 
-<html><body onload="window.location.href='mealplanner.php'"></body></html>
+<html><body onload="window.location.href='https://brendansothcott.co.uk/kathleen/mealplanner.php'"></body></html>

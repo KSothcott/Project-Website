@@ -3,13 +3,13 @@
 
 include_once('cookiecheck.php');
 
-    $filename = "/var/www/html/kathleen/lists/";
+    $filename = "./lists/";
     $filename.=$_COOKIE['UserID']."shoppinglist.txt";
     $filehandle = fopen($filename,"w"); 
     
     fwrite($filehandle," ");
     fclose($filehandle);
-   
+    
 ?>
 
-<html><body onload="window.location.href='shoppinglist.php'"></body></html>
+<html><body onload="window.location.href='https://brendansothcott.co.uk/kathleen/shoppinglist.php'"></body></html>
