@@ -15,6 +15,10 @@
             
             $con->query($query);
             
+            setcookie('cookievalue',$_COOKIE['cookievalue'],time()+3600);
+            setcookie('SessionID',$_COOKIE['SessionID'],time()+3600);
+            setcookie('UserID',$_COOKIE['UserID'],time()+3600);
+            
             }
 
 

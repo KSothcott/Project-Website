@@ -1,4 +1,6 @@
 <?php
+
+date_default_timezone_set('Europe/London');
 include_once('server.php');
 
 $query = 'SELECT `UserID`, `FirstName`, `LastName`, `Email`, DECODE(`password`, "'.$keystring.'") AS "PASSWORD"  FROM `userlogin`.`userinfo` WHERE `email`="'.$_POST['email'].'"';
@@ -15,8 +17,8 @@ if(strcmp($_POST['password'],$row['PASSWORD']))  $checkpassword = 0;
    
 if($checkemail && $checkpassword) 
 {
-    $query = "INSERT INTO `userlogin`.`logincookies`(`sessioncookie`,`time`,`UserID`) VALUES (UUID(),'".time()."', '".$row['UserID']."')";
-    
+    $query = "INSERT INTO `userlogin`.`logincookies`(`sessioncookie`,`time`,`UserID`) VALUES (".rand(1000,25000).",'".time()."', '".$row['UserID']."')";
+   
     $con->query($query);
     
     $query = "SELECT * FROM `userlogin`.`logincookies` WHERE `UserID` = ".$row['UserID']." AND `time` = (SELECT MAX(`time`) FROM `userlogin`.`logincookies`)";
@@ -28,14 +30,14 @@ if($checkemail && $checkpassword)
     $userid = $row['UserID'];
     
     $sessionid = $row['SessionID'];
-    
+     
     $cookievalue = $row['sessioncookie'];
     
-    setcookie('cookievalue',$cookievalue,$row['time']+3600); 
+    setcookie('cookievalue',$cookievalue,time()+3600);  
     
-    setcookie('SessionID',$sessionid,$row['time']+3600);
+    setcookie('SessionID',$sessionid,time()+3600);
     
-    setcookie('UserID',$userid,$row['time']+3600);
+    setcookie('UserID',$userid,time()+3600);
     
 }
  
