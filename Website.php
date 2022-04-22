@@ -62,23 +62,10 @@ include_once('cookiecheck.php');
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.10), 0 17px 50px 0 rgba(0,0,0,0.10);
     }
     
-    .button2 {
-        border: 2px solid black;
-        background-color: white;
-        padding: 10px;
-        text-decoration: none;
-        color: black;
+    .welcome {
         font-family: sans-serif;
         font-size: 15pt;
         margin: 50px;
-        text-align: center;
-        cursor: pointer;
-    } 
-       
-    .button2:hover {
-    background-color: #d1f1f1;
-    transition: all 0.4s ease;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.10), 0 17px 50px 0 rgba(0,0,0,0.10);
     }
     
 </style>
@@ -110,13 +97,20 @@ function clearAlert() {
     
     <img src="Meal_Planner_Logo.png" style="float: right;width: 300px;height: 300px;padding-right: 50px;"/>
     <br /><br />
+    
+    <p class="welcome">Welcome <?php
+    $query = 'SELECT * FROM `userinfo` WHERE `UserID` = '.$_COOKIE['UserID'];
+    $result = $con->query($query);
+    $row = $result->fetch(PDO::FETCH_ASSOC);
+    echo $row['FirstName'];
+    echo " ";
+    echo $row['LastName']?>
+    
     <a href="https://brendansothcott.co.uk/kathleen/mealplanner.php" class="button1">View current meal plan</a>
     <br /><br /><br /><br /><br /><br />
     <a class="button1" onclick="clearAlert()">Create a new meal plan</a>
     <br /><br /><br /><br /><br /><br />
     <a href="https://brendansothcott.co.uk/kathleen/shoppinglist.php" class="button1">Create or edit a shopping list</a>
-    <br /><br /><br /><br /><br />
-    <a href="logout.php" style="float:right;" class="button2">Log out</a>
 
 </body>
 </html>

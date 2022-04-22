@@ -57,6 +57,26 @@ include_once('cookiecheck.php');
     transition: all 0.4s ease;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.10), 0 17px 50px 0 rgba(0,0,0,0.10);
     }
+        
+    .button2 {
+        border: 2px solid black;
+        background-color: white;
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+        font-family: sans-serif;
+        font-size: 15pt;
+        margin: 50px;
+        text-align: center;
+        cursor: pointer;
+        float: right;
+    } 
+       
+    .button2:hover {
+        background-color: #d1f1f1;
+        transition: all 0.4s ease;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.10), 0 17px 50px 0 rgba(0,0,0,0.10);
+    }
     
 </style>
 </head>
@@ -77,6 +97,8 @@ include_once('cookiecheck.php');
     <a href="https://brendansothcott.co.uk/kathleen/newuser.php" class="button">Create an account</a>
     <br /><br /><br /><br /> 
     <a href="https://brendansothcott.co.uk/kathleen/login.php" class="button">Login to your account</a>
+    
+    <a href="logout.php" class="button2">Log out</a>
 
 </body>
 </html>
